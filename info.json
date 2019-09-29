@@ -1,8 +1,8 @@
 {
     "name": {
         "id": 1999900000,
-        "internal": "ModuleTemplateNoWhitespace",
-        "external": "Module Template With Wihitespace"
+        "internal": "ModuleTemplate",
+        "external": "Module Template Name With Wihitespace"
     },
     "category": "Tools",
     "version": "1.0.0",
@@ -15,7 +15,7 @@
         "website": "www.spl1nes.com"
     },
     "description": "Here you can create a description for the module.",
-    "directory": "ModuleTemplateNoWhitespace",
+    "directory": "ModuleTemplate",
     "dependencies": {
         "Admin": "1.0.0"
     },
@@ -29,24 +29,24 @@
             ],
             "type": 4,
             "for": 0,
-            "from": "ModuleTemplateNoWhitespace",
-            "file": "ModuleTemplateNoWhitespace"
+            "from": "ModuleTemplate",
+            "file": "ModuleTemplate"
         },
         {
             "pid": [
                 "/"
             ],
             "type": 4,
-            "from": "ModuleTemplateNoWhitespace",
+            "from": "ModuleTemplate",
             "for": "Navigation",
-            "file": "ModuleTemplateNoWhitespace"
+            "file": "ModuleTemplate"
         },
         {
             "pid": [
                 "/"
             ],
             "type": 5,
-            "from": "ModuleTemplateNoWhitespace",
+            "from": "ModuleTemplate",
             "for": "Navigation",
             "file": "Navigation"
         }
