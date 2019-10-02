@@ -39,15 +39,17 @@
                 "name": "test_base_belongs_to_one",
                 "type": "int(11)",
                 "null": true,
-                "default": null
+                "default": null,
+                "foreignTable": "test_belongs_to_one",
+                "foreignKey": "test_belongs_to_one_id"
             },
             "test_base_owns_one_self": {
                 "name": "test_base_owns_one_self",
                 "type": "int(11)",
                 "null": true,
                 "default": null,
-                "foreignTable": "oms_test_owns_one",
-                "foreignKey": "oms_test_owns_one_id"
+                "foreignTable": "test_owns_one",
+                "foreignKey": "test_owns_one_id"
             },
             "test_base_json": {
                 "name": "test_base_json",
@@ -73,8 +75,8 @@
             }
         },
     },
-    "oms_test_belongs_to_one": {
-        "name": "oms_test_belongs_to_one",
+    "test_belongs_to_one": {
+        "name": "test_belongs_to_one",
         "fields": {
             "test_belongs_to_one_id": {
                 "name": "test_belongs_to_one_id",
@@ -90,8 +92,8 @@
             }
         }
     },
-    "oms_test_owns_one": {
-        "name": "oms_test_owns_one",
+    "test_owns_one": {
+        "name": "test_owns_one",
         "fields": {
             "test_owns_one_id": {
                 "name": "test_owns_one_id",
