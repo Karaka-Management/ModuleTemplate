@@ -8,7 +8,7 @@ use phpOMS\Router\RouteVerb;
 return [
     '^:moduletemplate .*$' => [
         [
-            'dest' => '\Modules\ModuleTemplate\Controller\SearchController:searchHelp',
+            'dest' => '\Modules\ModuleTemplate\Controller\SearchController:searchModuleTemplate',
             'verb' => RouteVerb::ANY,
             'permission' => [
                 'module' => SearchController::MODULE_NAME,
@@ -19,7 +19,7 @@ return [
     ],
     '^:moduletemplate :rndCmd1 .*$' => [
         [
-            'dest' => '\Modules\ModuleTemplate\Controller\SearchController:searchHelp',
+            'dest' => '\Modules\ModuleTemplate\Controller\SearchController:searchModuleTemplate',
             'verb' => RouteVerb::ANY,
             'permission' => [
                 'module' => SearchController::MODULE_NAME,
@@ -30,7 +30,7 @@ return [
     ],
     '^:moduletemplate :rndCmd2 .*$' => [
         [
-            'dest' => '\Modules\ModuleTemplate\Controller\SearchController:searchHelp',
+            'dest' => '\Modules\ModuleTemplate\Controller\SearchController:searchModuleTemplate',
             'verb' => RouteVerb::ANY,
             'permission' => [
                 'module' => SearchController::MODULE_NAME,
@@ -41,7 +41,7 @@ return [
     ],
     '^:moduletemplate :rndCmd3 .*$' => [
         [
-            'dest' => '\Modules\ModuleTemplate\Controller\SearchController:searchHelp',
+            'dest' => '\Modules\ModuleTemplate\Controller\SearchController:searchModuleTemplate2',
             'verb' => RouteVerb::ANY,
             'permission' => [
                 'module' => SearchController::MODULE_NAME,
