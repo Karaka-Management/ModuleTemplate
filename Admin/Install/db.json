@@ -1,1 +1,73 @@
-
+{
+    "test_base": {
+        "name": "test_base",
+        "fields": {
+            "test_base_id": {
+                "name": "test_base_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "test_base_string": {
+                "name": "test_base_string",
+                "type": "varchar(254)",
+                "null": false
+            },
+            "test_base_int": {
+                "name": "test_base_int",
+                "type": "int(11)",
+                "null": false
+            },
+            "test_base_bool": {
+                "name": "test_base_bool",
+                "type": "tinyint(1)",
+                "null": false
+            },
+            "test_base_null": {
+                "name": "test_base_null",
+                "type": "int(11)",
+                "null": true,
+                "default": null
+            },
+            "test_base_float": {
+                "name": "test_base_float",
+                "type": "decimal(5, 4)",
+                "null": false
+            },
+            "test_base_belongs_to_one": {
+                "name": "test_base_belongs_to_one",
+                "type": "int(11)",
+                "null": true,
+                "default": null
+            },
+            "test_base_owns_one_self": {
+                "name": "test_base_owns_one_self",
+                "type": "int(11)",
+                "null": true,
+                "default": null
+            },
+            "test_base_json": {
+                "name": "test_base_json",
+                "type": "varchar(254)",
+                "null": false
+            },
+            "test_base_json_serializable": {
+                "name": "test_base_json_serializable",
+                "type": "varchar(254)",
+                "null": false
+            },
+            "test_base_datetime": {
+                "name": "test_base_datetime",
+                "type": "datetime",
+                "null": true,
+                "default": null
+            },
+            "test_base_datetime_null": {
+                "name": "test_base_datetime_null",
+                "type": "datetime",
+                "null": true,
+                "default": null
+            },
+        }
+    },
