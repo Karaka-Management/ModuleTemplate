@@ -73,7 +73,7 @@
                 "null": true,
                 "default": null
             }
-        },
+        }
     },
     "test_belongs_to_one": {
         "name": "test_belongs_to_one",
@@ -106,6 +106,73 @@
                 "name": "test_owns_one_string",
                 "type": "varchar(254)",
                 "null": false
+            }
+        }
+    },
+    "test_has_many_direct": {
+        "name": "test_has_many_direct",
+        "fields": {
+            "test_has_many_direct_id": {
+                "name": "test_has_many_direct_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "test_has_many_direct_string": {
+                "name": "test_has_many_direct_string",
+                "type": "varchar(254)",
+                "null": false
+            },
+            "test_has_many_direct_to": {
+                "name": "test_has_many_direct_to",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "test_base",
+                "foreignKey": "test_base_id"
+            }
+        }
+    },
+    "test_has_many_rel": {
+        "name": "test_has_many_rel",
+        "fields": {
+            "test_has_many_rel_id": {
+                "name": "test_has_many_rel_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "test_has_many_rel_string": {
+                "name": "test_has_many_rel_string",
+                "type": "varchar(254)",
+                "null": false
+            }
+        }
+    },
+    "test_has_many_rel_relations": {
+        "name": "test_has_many_rel_relations",
+        "fields": {
+            "test_has_many_rel_relations_id": {
+                "name": "test_has_many_rel_relations_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "test_has_many_rel_relations_src": {
+                "name": "test_has_many_rel_relations_src",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "test_base",
+                "foreignKey": "test_base_id"
+            },
+            "test_has_many_rel_relations_dest": {
+                "name": "test_has_many_rel_relations_dest",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "test_has_many_rel",
+                "foreignKey": "test_has_many_rel_id"
             }
         }
     }
