@@ -45,7 +45,9 @@
                 "name": "test_base_owns_one_self",
                 "type": "int(11)",
                 "null": true,
-                "default": null
+                "default": null,
+                "foreignTable": "oms_test_owns_one",
+                "foreignKey": "oms_test_owns_one_id"
             },
             "test_base_json": {
                 "name": "test_base_json",
@@ -68,6 +70,41 @@
                 "type": "datetime",
                 "null": true,
                 "default": null
+            }
+        },
+    },
+    "oms_test_belongs_to_one": {
+        "name": "oms_test_belongs_to_one",
+        "fields": {
+            "test_belongs_to_one_id": {
+                "name": "test_belongs_to_one_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
             },
+            "test_belongs_to_one_string": {
+                "name": "test_belongs_to_one_string",
+                "type": "varchar(254)",
+                "null": false
+            }
         }
     },
+    "oms_test_owns_one": {
+        "name": "oms_test_owns_one",
+        "fields": {
+            "test_owns_one_id": {
+                "name": "test_owns_one_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "test_owns_one_string": {
+                "name": "test_owns_one_string",
+                "type": "varchar(254)",
+                "null": false
+            }
+        }
+    }
+}
