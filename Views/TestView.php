@@ -14,7 +14,6 @@ declare(strict_types=1);
 
 namespace Modules\Tasks\Views;
 
-use Modules\Tasks\Models\TaskStatus;
 use phpOMS\Views\View;
 
 /**
