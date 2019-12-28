@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Orange Management
@@ -18,14 +17,14 @@ namespace Modules\ModuleTemplate\Admin\Install;
 use phpOMS\DataStorage\Database\DatabasePool;
 
 /**
- * Navigation class.
+ * Search class.
  *
  * @package Modules\ModuleTemplate\Admin\Install
  * @license OMS License 1.0
  * @link    https://orange-management.org
  * @since   1.0.0
  */
-class Navigation
+final class Search
 {
     /**
      * Install navigation providing
@@ -39,6 +38,6 @@ class Navigation
      */
     public static function install(string $path, DatabasePool $dbPool) : void
     {
-        \Modules\Navigation\Admin\Installer::installExternal($dbPool, ['path' => __DIR__ . '/Navigation.install.json']);
+        \Modules\Search\Admin\Installer::installExternal($dbPool, ['path' => __DIR__ . '/SearchCommands.php']);
     }
 }

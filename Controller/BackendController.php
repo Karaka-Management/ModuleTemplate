@@ -17,7 +17,7 @@ namespace Modules\ModuleTemplate\Controller;
 use Modules\ModuleTemplate\Models\PermissionState;
 use Modules\ModuleTemplate\Models\BaseModel;
 use Modules\ModuleTemplate\Models\BaseModelMapper;
-use Modules\ModuleTemplate\Views\BasicView;
+use Modules\ModuleTemplate\Views\TestView;
 
 use phpOMS\Asset\AssetType;
 use phpOMS\Contract\RenderableInterface;
@@ -75,7 +75,7 @@ final class BackendController extends Controller
      */
     public function viewSample2(RequestAbstract $request, ResponseAbstract $response, $data = null) : RenderableInterface
     {
-        $view = new BaseView($this->app, $request, $response);
+        $view = new TestView($this->app, $request, $response);
         $view->setTemplate('/Modules/ModuleTemplate/Theme/Backend/sample2');
         $view->addData('nav', $this->app->moduleManager->get('Navigation')->createNavigationMid(1999901001, $request, $response));
 

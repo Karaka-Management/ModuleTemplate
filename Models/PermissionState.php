@@ -4,7 +4,7 @@
  *
  * PHP Version 7.4
  *
- * @package   Modules\ModuleTemplate\Admin
+ * @package   Modules\ModuleTemplate\Models
  * @copyright Dennis Eichhorn
  * @license   OMS License 1.0
  * @version   1.0.0
@@ -12,18 +12,20 @@
  */
 declare(strict_types=1);
 
-namespace Modules\ModuleTemplate\Admin;
+namespace Modules\ModuleTemplate\Models;
 
-use phpOMS\Module\UninstallerAbstract;
+use phpOMS\Stdlib\Base\Enum;
 
 /**
- * Uninstaller class.
+ * Permision state enum.
  *
- * @package Modules\ModuleTemplate\Admin
+ * @package Modules\ModuleTemplate\Models
  * @license OMS License 1.0
  * @link    https://orange-management.org
  * @since   1.0.0
  */
-class Uninstaller extends UninstallerAbstract
+abstract class PermissionState extends Enum
 {
+    public const BASE_MODEL = 1;
+    public const DASHBOARD  = 2;
 }
