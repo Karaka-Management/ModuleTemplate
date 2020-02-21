@@ -27,7 +27,7 @@ use phpOMS\Views\View;
 class TemplateView extends View
 {
     /**
-     * Get task status color.
+     * Custom view function.
      *
      * @return string
      *
@@ -35,6 +35,6 @@ class TemplateView extends View
      */
     public function specialFunction() : string
     {
-        return 'Function in custom view.';
+        return 'Function in custom view. Create your own functions here.';
     }
 }
