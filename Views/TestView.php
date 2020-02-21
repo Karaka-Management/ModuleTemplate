@@ -4,7 +4,7 @@
  *
  * PHP Version 7.4
  *
- * @package   Modules\Tasks
+ * @package   Modules\ModuleTemplate\Views
  * @copyright Dennis Eichhorn
  * @license   OMS License 1.0
  * @version   1.0.0
@@ -12,22 +12,20 @@
  */
 declare(strict_types=1);
 
-namespace Modules\Tasks\Views;
+namespace Modules\ModuleTemplate\Views;
 
 use phpOMS\Views\View;
 
 /**
- * Task view class.
+ * Template view class.
  *
- * @package Modules\Tasks
+ * @package Modules\ModuleTemplate\Views
  * @license OMS License 1.0
  * @link    https://orange-management.org
  * @since   1.0.0
  */
 class TemplateView extends View
 {
-    protected $media = [];
-
     /**
      * Get task status color.
      *
@@ -37,6 +35,6 @@ class TemplateView extends View
      */
     public function specialFunction() : string
     {
-        return 'Inside of custom view.';
+        return 'Function in custom view.';
     }
 }
