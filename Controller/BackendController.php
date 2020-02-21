@@ -4,7 +4,7 @@
  *
  * PHP Version 7.4
  *
- * @package   Modules\ModuleTemplate
+ * @package   Modules\ModuleTemplate\Controller
  * @copyright Dennis Eichhorn
  * @license   OMS License 1.0
  * @version   1.0.0
@@ -28,7 +28,7 @@ use phpOMS\Views\View;
 /**
  * Backend controller for the ModuleTemplate module.
  *
- * @package Modules\ModuleTemplate
+ * @package Modules\ModuleTemplate\Controller
  * @license OMS License 1.0
  * @link    https://orange-management.org
  * @since   1.0.0
